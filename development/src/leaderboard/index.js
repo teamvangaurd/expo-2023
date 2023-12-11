@@ -24,7 +24,16 @@ class LeaderBoard {
         dataArray.sort(([, a], [, b]) => b.score - a.score);
         for(let index = 0; index < dataArray.length; index++) {
             const [ username, { score, time }] = dataArray[index];
-            this.constructTableDataTemplate(index+1, username, score, time );
+            var level = "BEGINNER";
+            if(score>10 && score<=20)
+            {
+                level = "INTERMEDIATE"
+            }
+            else if(score>=20 && score<=30)
+            {
+                level = "EXPERT"
+            }
+            this.constructTableDataTemplate(index+1, username, score, level );
         }
     }
 
