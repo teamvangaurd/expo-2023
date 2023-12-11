@@ -1,6 +1,6 @@
 export default class GameUtil {
     constructor() {
-        this.words = ['MALWARE','PHISING','PASSWORD','DDOS','BRUTEFORCE','TROJAN','XSS','RCE','DNS','COOKIE','REDOS','BREACH','FIREWALL','MFA','VPN','PRIVACY','PORT','SOCIAL','BOTNET','LINUX','ROUTER','WORM','SPYWARE','CAPTCHA','BACKDOOR','CSRF','SPAM','ADWARE','HASH','DARKNET'];
+        this.words = ['MALWARE','PHISHING','PASSWORD','DDOS','BRUTEFORCE','TROJAN','XSS','RCE','DNS','COOKIE','REDOS','BREACH','FIREWALL','MFA','VPN','PRIVACY','PORT','SOCIAL','BOTNET','LINUX','ROUTER','WORM','SPYWARE','CAPTCHA','BACKDOOR','CSRF','SPAM','ADWARE','HASH','DARKNET'];
         this.clue = [
             'What type of malicious software is designed to harm your computer?',
             'What\'s the term for tricking people into sharing sensitive info through fake emails or websites?',
@@ -39,7 +39,7 @@ export default class GameUtil {
         this.wins = 0;
         this.losses = 0;
         this.clueLabel = this.$('clue');
-        this.timerDuration = 120000;
+        this.timerDuration = 150000;
         this.timeLeft = this.timerDuration;
     }
 
