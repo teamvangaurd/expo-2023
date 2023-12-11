@@ -39,7 +39,7 @@ export default class GameUtil {
         this.wins = 0;
         this.losses = 0;
         this.clueLabel = this.$('clue');
-        this.timerDuration = 150000;
+        this.timerDuration = 300000;
         this.timeLeft = this.timerDuration;
     }
 
